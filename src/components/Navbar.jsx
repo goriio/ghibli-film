@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { Searchbar } from './Searchbar';
 
 export const StyledNavbar = styled.header`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
   height: 80px;
+
   a {
     text-decoration: none;
   }
@@ -22,6 +26,7 @@ export function Navbar() {
           Film
         </Title>
       </Link>
+      <Searchbar />
     </StyledNavbar>
   );
 }
